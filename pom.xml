@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" >
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>my-awesome-autoconfig</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <java.version>23</java.version>
+    <spring-boot.version>3.2.4</spring-boot.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>${spring-boot.version}</version>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version> <!-- latest as of now -->
+        <configuration>
+          <source>23</source>
+          <target>23</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
